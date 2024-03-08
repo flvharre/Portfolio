@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Bayon&family=Rammetto+One&family=Aclonica&family=Poiret+One&display=swap');
+
+/*
+font-family: 'Poiret One', cursive;
+font-family: 'Aclonica', sans-serif;
+font-family: 'Rammetto One', cursive;
+font-family: 'Bayon', sans-serif;
+font-family: 'Nova Square', cursive;
+*/
+
+* {
+    margin: 0 0;
+}
+
+body {
+    background: #f3e5d1;
+    height: 100vh;
+}
+
+#Topbanner img {
+    width: 84%;
+    margin-left: 16%;
+    margin-bottom: -3px;
+}
+
+/* Header */
+header {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: white;
+    height: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: inline-flex;
+    font-weight: 500;
+    gap: 110px;
+    margin-right: 30px;
+    margin-top: 1%;
+    font-family: 'Bayon', sans-serif;
+}
+
+#logo {
+    height: 105px;
+    margin-left: 30px;
+    margin-top: 1%;
+
+}
+
+header nav a {
+    color: #f0a77c;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+header nav a:hover {
+    color: #e49050;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+/* ///////////////////// */
+
+/* Section 1*/
+#masection1 {
+    height: 200px;
+    width: 1050px;
+    margin: auto;
+    background-color: #a3baa679;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#masection1 p {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'Poiret One', cursive;
+}
+/* ///////////////////// */
+
+/* Section 2 */
+#masection2 {
+    height: 600px;
+    margin-top: 50px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #f49e5d3d;
+}
+
+#masection2 h1 {
+    color: #f49e5d;
+    text-shadow: 2px 2px #ffffff;
+    text-align: center;
+    font-size: 45px;
+    background-color: #f3e5d1;
+    font-family: 'Rammetto One', cursive;
+}
+
+#masection2 div h2 + h3 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*Curved svg index*/
+.custom-shape-divider-top-1679729809 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-shape-divider-top-1679729809 svg {
+    width: 187%;
+    height: 337px;
+}
+
+.custom-shape-divider-top-1679729809 .shape-fill {
+    fill: #F3E5D1;
+}
+/* //// */
+
+#profils {
+    height: 390px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    margin-top: -226px;
+    font-family: 'Aclonica', sans-serif;
+}
+
+#profils h3{
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+}
+
+/* Encadrés Gauche Flavie */
+#containerG {
+    background-color: #aeb496;
+    width: 260px;
+    border-radius: 20px;
+}
+
+#containerG img {
+    background-color: #819e80;
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    margin-top: -90px;
+}
+
+#containerG h2 {
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+#containerG a {
+   text-decoration: none;
+   color: white;
+}
+
+/*bouton CV*/
+#containerG p {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #819e80;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Nova Square', cursive;
+}
+
+#containerG p:hover {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #819e80;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: #819e80b7;
+    }
+/* //// */
+
+/* Encadrés Milieu Benjamin */
+#containerM {
+    background-color: #f6b250;
+    width: 260px;
+    border-radius: 20px;
+}
+
+#containerM img {
+    background-color: #f99300;
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    margin-top: -90px;
+}
+
+#containerM h2 {
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+#containerM a {
+    text-decoration: none;
+    color: white;
+ }
+
+ /*bouton CV*/
+#containerM p {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #f99300;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Nova Square', cursive;
+}
+
+#containerM p:hover {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #f99100;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: #f99100a9;
+}
+/* //// */
+
+/* Encadrés Droite François*/
+#containerD {
+    background-color: #eac189;
+    width: 260px;
+    border-radius: 20px;
+}
+
+#containerD img {
+    background-color: #e5b369;
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    margin-top: -90px;
+}
+
+#containerD h2 {
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+#containerD a {
+    text-decoration: none;
+    color: white;
+ }
+
+ /*bouton CV*/
+#containerD p {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #e5b369;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Nova Square', cursive;
+}
+
+#containerD p:hover {
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-right: 27%;
+    border: 2px solid #e5b369;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: #e5b369b4;
+}
+/* //// */
+/* ///////////////////// */
+
+
+#social {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 50px;
+}
+
+#social a {
+    text-decoration: none;
+    color: #f49e5d;
+    text-align: center;
+}
+
+#social a:hover  {
+    text-decoration: none;
+    color: #f78935;
+    text-align: center;
+}
+
+.fa-square-envelope {
+    font-size: 50px !important; 
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    height: 250px;
+    color: #f0a77cce;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poiret One', cursive;
+}
+
+#links {
+    display: flex;
+    gap: 70px;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 19px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #f0a77c;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #e49050;
+}
+
+footer p {
+    width: 180px;
+    text-align:left;
+    font-size: 19px;
+}
+/* ///////////////////// */
+
+/* PAGE CONTACT */
+#contact {
+    width: 100%;
+    background-color: rgba(253, 243, 235, 0.274);
+    height: fit-content;
+    border-bottom: 2px solid white;
+    padding-bottom: 65px; /* 6% */
+}
+
+table {
+    border: solid 4px #a3baa6;
+    width: 60%;
+    margin: auto;
+    color: #f0a77c;
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: -12px 12px #f0a77c;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    height: 300px;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+#formulaire {
+    height: 500px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formulaire img {
+    margin: auto;
+    height: 70px;
+}
+
+#formulaire h1 {
+    color: #f49e5d;
+    text-align: center;
+    font-family: 'Nova Square', cursive;
+}
+
+#message {
+    height: 80px;
+}
+
+/* ///////////////////// */
+
+/* PAGE GALERIE + CV*/
+.custom-shape-divider-top-1680019974 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680019974 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 266px;
+}
+
+.custom-shape-divider-top-1680019974 .shape-fill {
+    fill: #A3BAA6;
+}
+
+.page {
+    width: 100%;
+    background-color: rgba(253, 243, 235, 0.274);
+    border-bottom: 2px solid white;
+}
+
+.contenu {
+    position: relative;
+    top: -150px;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    text-shadow: 4px 2px #819e80;
+}
+
+.fa-solid {
+    font-size: 70px;
+}
+
+.contenu h1 {
+    font-size: 50px;
+    font-family: 'Nova Square', cursive;
+}
+/* ///////////////////// */
