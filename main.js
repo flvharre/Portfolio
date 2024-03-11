@@ -1,53 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cat = document.querySelectorAll('.cat');
+    const CAT = document.querySelectorAll('.cat');
 
 
 // Collapse
-    cat.forEach(cat => {
-        const catName = cat.querySelector('.cat-name');
+    CAT.forEach(CAT => {
+        const CAT_NAME = CAT.querySelector('.cat-name');
 
 
-        catName.addEventListener('click', event => {
+        CAT_NAME.addEventListener('click', event => {
             event.stopPropagation(); // Preventing the event from bubbling up to the document
-            catName.classList.toggle('active');
+            CAT_NAME.classList.toggle('active');
             
-            const catContainer = catName.nextElementSibling;
-                if(catName.classList.contains('active')) {
-                    catContainer.style.maxHeight = catContainer.scrollHeight + "px";
+            const CAT_CONTAINER = CAT_NAME.nextElementSibling;
+                if(CAT_NAME.classList.contains('active')) {
+                    CAT_CONTAINER.style.maxHeight = CAT_CONTAINER.scrollHeight + "px";
                 }
                 else {
-                    catContainer.style.maxHeight = 0;
+                    CAT_CONTAINER.style.maxHeight = 0;
                 }
-                const prevArrow = catContainer.querySelector('.prev-arrow');
-                const nextArrow = catContainer.querySelector('.next-arrow');
+                const PREV_ARROW = CAT_CONTAINER.querySelector('.prev-arrow');
+                const NEXT_ARROW = CAT_CONTAINER.querySelector('.next-arrow');
                 
-            prevArrow.classList.toggle('active');
-            nextArrow.classList.toggle('active');
+            PREV_ARROW.classList.toggle('active');
+            NEXT_ARROW.classList.toggle('active');
 
 
             
             });
         });
-
-
-    
-// next and prev buttons
-const cardContainers = [...document.querySelectorAll('.cards-container')];
-const nextButton = [...document.querySelectorAll('.next-arrow')];
-const prevButton = [...document.querySelectorAll('.prev-arrow')];
-
-    cardContainers.forEach((item, i) => {
-        let containerDimensions = item.getBoundingClientRect();
-        let containerWidth = containerDimensions.width;
-    
-        nextButton[i].addEventListener('click', () => {
-            item.scrollLeft += containerWidth;
-        })
-    
-        prevButton[i].addEventListener('click', () => {
-            item.scrollLeft -= containerWidth;
-        })
-    });
 
 
 // DOWNLOAD AT CLICK
