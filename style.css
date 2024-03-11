@@ -43,6 +43,7 @@ Saturée :
 
 html {
     background-color: #F9F9F9;
+    font-size: 16px;
 }
 
 
@@ -53,7 +54,7 @@ body {
   font-weight: 500;
 }
 
-p:not(#portfolio p, #droite p) {
+p:not(#summary p, #droite p) {
     color: #585223;
     font-family: "Afacad", sans-serif;
 }
@@ -126,14 +127,6 @@ nav ul li a:hover {
     transition: 0.25s;
 }
 
-
-#header_accueil {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    align-items: center;
-}
-
 .under-nav {
     background-color: #f5ebab;
     height: 0.17rem;
@@ -142,15 +135,83 @@ nav ul li a:hover {
     border: none;
 }
 
-#portfolio h1, .portfolio-p {
-    font-family: "Fraunces", serif;
-    font-size: 4rem;
-    letter-spacing: 5px;
-    text-align: center;
+/* INTRO */
+
+
+#header_accueil {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: flex-end;
 }
 
-#portfolio h1, #portfolio p:nth-of-type(1) {
+
+#gauche {
+    width: 450px;
+    text-align: right;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#summary h1 {
     color: #7a7f2d;
+    font-family: "Fraunces", serif;
+    font-size: 1.7rem;
+    letter-spacing: 5px;
+}
+
+#summary a:nth-of-type(1) {
+    color: #7a7f2d;
+}
+
+#summary a:nth-of-type(1) hr {
+    border: 1px solid #7a7f2d;
+}
+
+#summary a:nth-of-type(2) {
+    color: #7a7f2dca;
+}
+
+#summary a:nth-of-type(2) hr {
+    border: 1px solid #7a7f2dca;
+}
+
+
+#summary a:nth-of-type(3) {
+    color: #7a7f2da0;
+}
+
+#summary a:nth-of-type(3) hr {
+    border: 1px solid #7a7f2da0;
+}
+
+.summary-line {
+    margin: 30px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: nowrap;
+    text-align: right;
+    text-decoration: none;
+}
+
+.summary-line p {
+    font-family: "Afacad", sans-serif;
+    font-size: 1.4rem;
+}
+
+.summary-line p:nth-of-type(2) {
+    width: 120px;
+}
+
+.summary-line p:nth-of-type(1) {
+    color: #cdc475;
+}
+
+#summary hr {
+    width: 400px;
 }
 
     /*
@@ -159,47 +220,23 @@ nav ul li a:hover {
     */
 
 
-.portfolio-p {
-    letter-spacing: 7px;
-}
-
-#portfolio p:nth-of-type(1) {
-    color: #7a7f2db2;
-}
-
-#portfolio p:nth-of-type(2) {
-    color: #7a7f2d73;
-}
-
-#portfolio p:nth-of-type(3) {
-    color: #7a7f2d35;
-}
-
-#portfolio p:nth-of-type(4) {
-    color: #7a7f2d0f;
-}
-
-#gauche p:not(.portfolio-p) {
-    margin-top: 20px;
-    font-size: 1.4rem;
-}
 
 /*
-#portfolio span {
+#summary span {
     color: #ffc75e;
 }
 */
 
 #droite {
     height: 500px;
-    width: 300px;
+    width: 335px;
     position: relative;
 
 }
 
 #ligne_un {
    color: #cdc475;
-    filter: drop-shadow(5px 5px #F9F9F9);
+    filter: drop-shadow(5px 0 #F9F9F9);
     /*
     color: #3a34e0;
     color: #79d159;
@@ -210,13 +247,14 @@ nav ul li a:hover {
     font-family: "Imbue", serif;
     font-size: 5rem;
     top: 0;
+    left: 0;
 
 }
 
 
 #ligne_deux {
     color: #cdc475;
-    filter: drop-shadow(-5px -5px #F9F9F9);
+    filter: drop-shadow(-4px 0 #F9F9F9);
     /*
     color: #3a34e0;
     color: #79d159;
@@ -226,7 +264,7 @@ nav ul li a:hover {
     text-align: right;
     font-family: "Imbue", serif;
     font-size: 5rem;
-    right: 0;
+    left: 200px;
     
 }
 
@@ -237,6 +275,7 @@ nav ul li a:hover {
     font-family: "Afacad", sans-serif;
     font-size: 0.8rem;
     color: #7a7f2d;
+    text-wrap: nowrap;
 }
 
 #box_pantone {
@@ -245,7 +284,7 @@ nav ul li a:hover {
     width: 265px;
     border: 2px #7a7f2d solid;
     bottom: 43px;
-    right: 17px;
+    left: 17px;
     overflow: hidden;
 }
 
@@ -262,7 +301,7 @@ nav ul li a:hover {
 
 /* Presentation */
 
-#container {
+#about {
     height: 700px;
     margin-top: 100px;
     width: 100%;
@@ -292,6 +331,7 @@ nav ul li a:hover {
     font-size: 1.3rem;
 
 }
+
 
 /* BOUTON CV */
 
