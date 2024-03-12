@@ -23,10 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             PREV_ARROW.classList.toggle('active');
             NEXT_ARROW.classList.toggle('active');
-
-
             
             });
+
         });
 
 

@@ -562,12 +562,23 @@ a.voir-bouton {
 
 
 /* SECTION CONTACT */
-#contact-accueil i {
-  color: #f9f9f9;
-  font-size: 2.5rem;
+
+#contact-accueil-contenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
 }
 
-#contact-accueil a:not(#contact-accueil a.github) {
+a.github i {
+  color: #ffc75e;
+  font-size: 80px;
+
+}
+
+#mail i, #contact-accueil a:not(#contact-accueil a.github) {
+  color: #f9f9f9;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -580,7 +591,36 @@ a.voir-bouton {
 
 }
 
+#mail {
+  display: flex;
+  position: relative;
+  width: fit-content;
+}
 
+#mail:after {
+  position: absolute;
+  content: "harreflavie@gmail.com";
+  width: 0;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  transition: all 0.3s ease;
+  color: transparent;
+}
+
+#mail:hover:after {
+  left: auto;
+  right: 0;
+  color: #585223;
+  width: fit-content;
+  background-color: #ffc75e;
+  border-radius: 50px;
+  top: 25px;
+  left: 90px;
+  height: 60px;
+  transition: all 0.25s ease-in-out;
+}
 
 
 
