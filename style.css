@@ -560,6 +560,30 @@ a.voir-bouton {
   transition: max-height 0.3s ease-in-out;
 }
 
+
+/* SECTION CONTACT */
+#contact-accueil i {
+  color: #f9f9f9;
+  font-size: 2.5rem;
+}
+
+#contact-accueil a:not(#contact-accueil a.github) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #ffc75e;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+
+}
+
+
+
+
+
 footer {
   display: flex;
   align-items: center;
