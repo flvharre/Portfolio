@@ -52,7 +52,7 @@ body {
   font-weight: 500;
 }
 
-p:not(#summary p, #droite p) {
+p:not(#summary p, #droite p, #mail p) {
   color: #585223;
   font-family: "Afacad", sans-serif;
 }
@@ -588,39 +588,48 @@ a.github i {
   width: 80px;
   height: 80px;
   text-align: center;
-
+  box-shadow: 0 0 0 5px #f9f9f9;
 }
+
 
 #mail {
   display: flex;
+  align-items: center;
+  transition: width 0.2s ease-in-out;
   position: relative;
-  width: fit-content;
 }
 
-#mail:after {
-  position: absolute;
-  content: "harreflavie@gmail.com";
-  width: 0;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -1;
-  transition: all 0.3s ease;
-  color: transparent;
+#mail:hover {
+  transition: width 0.25s ease-in-out;
 }
 
-#mail:hover:after {
-  left: auto;
-  right: 0;
-  color: #585223;
-  width: fit-content;
+#mail:hover > .mail {
+  color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+  z-index: auto;
+  left: 40px;
   background-color: #ffc75e;
-  border-radius: 50px;
-  top: 25px;
-  left: 90px;
-  height: 60px;
-  transition: all 0.25s ease-in-out;
+  border-radius: 5px;
+
 }
+
+.mail {
+  width: fit-content;
+  font-size: 1.5rem;
+  z-index: -1;
+  color: #58522300;
+  position: absolute;
+  left: 40px;
+  height: 100%;
+  padding: 25px 25px 25px 60px;
+  font-family: "Afacad", sans-serif;
+}
+
+.fa-envelope {
+  z-index: 2;
+}
+
+
 
 
 
