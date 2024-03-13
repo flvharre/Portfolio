@@ -17,10 +17,10 @@
     <header>
       <nav>
         <a id="logo" href="">flavie harre</a>
-        <ul>
+        <!-- <ul>
           <li><a class="nav" href="index.html">accueil</a></li>
           <li><a class="nav" href="contact.html">contact</a></li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <hr class="under-nav" />
@@ -119,7 +119,7 @@
                       <a target="_blank" href="LFP/index.html"
                         >Maquette de page d'accueil pour La Fée Perle</a
                       >
-                      <p>html, css, javascript</p>
+                      <p>html, css, javascript (projet d'ajout de php pour les pages catalogues)</p>
                       <a
                         class="bouton voir-bouton"
                         target="_blank"
@@ -161,11 +161,24 @@
                   </div>
 
                   <div id="photos-LFP" class="card-container">
-                    <div>
-                      <img src="" alt="" />
-                      <img src="" alt="" />
-                      <img src="" alt="" />
+                    <div id="photos-LFP-container">
+                      <img class="img" src="img/LFP-photo-prod_01-min.jpg" alt="" />
+                      <img class="img" src="img/LFP-photo-prod_02-min.jpg" alt="" />
+                      <img class="img" src="img/LFP-photo-prod_03-min.jpg" alt="" />
+                      <img class="img" src="img/LFP-photo-prod_04-min.jpg" alt="" />
                     </div>
+
+                    <hr>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <!-- The Close Button -->
+                      <span class="close">&times;</span>
+
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01" />
+                    </div>
+
                     <div id="photos-LFP-infos">
                       <p>Photos produits</p>
                       <p>
@@ -285,7 +298,7 @@
             <div id="mail">
               <p class="mail">harreflavie@gmail.com</p>
               <i class="fa-solid fa-envelope"></i>
-          </div>
+            </div>
           </div>
         </div>
       </section>

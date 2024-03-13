@@ -26,7 +26,29 @@ document.addEventListener('DOMContentLoaded', () => {
             
             });
 
+
         });
 
     });
 
+
+    // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+let images = document.querySelectorAll(".img");
+let modalImg = document.getElementById("img01");
+
+// Loop through each image and add a click event listener
+images.forEach(img => {
+  img.addEventListener("click", function() {
+    modal.style.display = "block";
+    let srcWithoutMin = this.src.replace("-min", ""); // Remove "-min" from the source
+    modalImg.src = srcWithoutMin;
+  });
+});
+
+// When the user clicks on <span> (x), close the modal
+myModal.onclick = function() {
+  modal.style.display = "none";
+}

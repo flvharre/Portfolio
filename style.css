@@ -73,24 +73,14 @@ header nav,
   color: #585223;
 }
 
-/*
-
-body {
-    display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(8, auto);
-		column-gap: 10px;
-	}
-*/
-
 /* header */
 
-header {
+/* header {
   position: sticky;
   z-index: 16;
   top: 0;
   background-color: #f9f9f9;
-}
+} */
 
 header nav {
   padding-top: 20px;
@@ -426,7 +416,7 @@ h3 {
 
 .cat-container {
   width: 100%;
-  margin: 30px auto 0;
+  margin: 30px auto;
   height: fit-content;
   display: flex;
   justify-content: space-evenly;
@@ -434,7 +424,6 @@ h3 {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 
 /* Contenu sous forme de site */
 .card-contenu-site {
@@ -502,9 +491,8 @@ a.voir-bouton {
   margin-top: 20px;
   padding: 4px 25px;
   border: 2px solid #7a7f2d;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
-
 
 .voir-bouton:after {
   background: #7a7f2d;
@@ -547,9 +535,81 @@ a.voir-bouton {
 
 #photos-LFP-infos {
   width: 500px;
-  padding: 35px;
   background-color: #ffffff7a;
+  padding: 0 30px 30px;
+}
 
+#photos-LFP {
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#photos-LFP-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 100%;
+  padding: 30px 30px 0;
+}
+
+.img {
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100px;
+}
+
+.img:hover {
+  box-shadow: 7px 7px #f5ebab;
+  ;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: #f9f9f9; /* Fallback color */
+  background-color: #f9f9f9b0; /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 80vh;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: apparition;
+  animation-duration: 0.6s;
+}
+
+@keyframes apparition {
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 
 /* Apparition contenu card au click */
@@ -559,7 +619,6 @@ a.voir-bouton {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
-
 
 /* SECTION CONTACT */
 
@@ -579,10 +638,10 @@ a.voir-bouton {
 a.github i {
   color: #ffc75e;
   font-size: 80px;
-
 }
 
-#mail i, #contact-accueil a:not(#contact-accueil a.github) {
+#mail i,
+#contact-accueil a:not(#contact-accueil a.github) {
   color: #f9f9f9;
   font-size: 2.5rem;
   display: flex;
@@ -595,12 +654,12 @@ a.github i {
   height: 80px;
   text-align: center;
   box-shadow: 0 0 0 5px #f9f9f9;
-  
 }
 
-#contact-accueil-contenu a:hover, #mail:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
+#contact-accueil-contenu a:hover,
+#mail:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
 }
 
 #contact-accueil-contenu a {
@@ -614,15 +673,12 @@ a.github i {
   position: relative;
 }
 
-
-
 #mail:hover > .mail {
   color: #f9f9f9;
   z-index: auto;
   left: 40px;
   background-color: #ffc75e;
   border-radius: 20px;
-
 }
 
 .mail {
@@ -636,16 +692,11 @@ a.github i {
   padding: 25px 25px 25px 60px;
   font-family: "Afacad", sans-serif;
   transition: all 0.2s ease-in-out;
-
 }
 
 .fa-envelope {
   z-index: 2;
 }
-
-
-
-
 
 footer {
   display: flex;
