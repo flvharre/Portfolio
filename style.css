@@ -57,6 +57,12 @@ p:not(#summary p, #droite p, #mail p) {
   font-family: "Afacad", sans-serif;
 }
 
+h4 {
+  font-family: "Imbue", serif;
+  font-size: 1.4rem;
+
+}
+
 header nav,
 .body {
   margin: 0 auto;
@@ -679,7 +685,7 @@ a.voir-bouton {
 #BFF-crea img:nth-of-type(1) {
   grid-column: 1/4;
   grid-row: 1;
-  width: 60%;
+  width: 50%;
 }
 
 #BFF-crea img:nth-of-type(2) {
