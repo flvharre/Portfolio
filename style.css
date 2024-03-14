@@ -477,9 +477,6 @@ h3 {
 /* Fin contenu sous forme de site */
 
 /* Catégorie LFP */
-#LFP {
-}
-
 .main-site {
   width: 400px;
   height: fit-content;
@@ -564,8 +561,6 @@ a.voir-bouton {
 
 .img:hover {
   box-shadow: 7px 7px #f5ebab;
-  ;
-
 }
 
 /* The Modal (background) */
@@ -612,6 +607,104 @@ a.voir-bouton {
   }
 }
 
+/* SITE BFF */
+
+.cat-container-deux {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#BFF-site {
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  background: linear-gradient(90deg, #ffc75e 40%, #d6c2a60d 40%);
+}
+
+#BFF-site-img {
+  width: 60%;
+}
+
+#BFF-site-img img {
+  width: 100%;
+}
+
+#BFF-site-infos {
+  width: 35%;
+}
+
+#BFF-aside {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  gap: 15px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+#BFF-aside hr {
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  height: 200px;
+  width: 1px;
+}
+
+#BFF-crea-infos {
+  width: 40%;
+  text-align: right;
+}
+
+#BFF-crea {
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  align-items: end;
+}
+
+#BFF-crea img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#BFF-crea img:nth-of-type(1) {
+  grid-column: 1/4;
+  grid-row: 1;
+  width: 60%;
+}
+
+#BFF-crea img:nth-of-type(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#BFF-crea img:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#BFF-crea img:nth-of-type(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+
+#color-separator {
+  background-color: #d6c2a670;
+  width: 80%;
+  height: 25px;
+  margin: 0 0 0 auto;
+}
+
 /* Apparition contenu card au click */
 
 .collapse-container {
@@ -637,7 +730,7 @@ a.voir-bouton {
 
 a.github i {
   color: #ffc75e;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 #mail i,
@@ -650,8 +743,8 @@ a.github i {
   text-decoration: none;
   background-color: #ffc75e;
   border-radius: 50px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   text-align: center;
   box-shadow: 0 0 0 5px #f9f9f9;
 }
@@ -689,7 +782,7 @@ a.github i {
   position: absolute;
   left: 40px;
   height: 100%;
-  padding: 25px 25px 25px 60px;
+  padding: 20px 20px 20px 50px;
   font-family: "Afacad", sans-serif;
   transition: all 0.2s ease-in-out;
 }
