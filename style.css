@@ -58,7 +58,7 @@ p:not(#summary p, #droite p, #mail p) {
 }
 
 h4 {
-  font-family: "Imbue", serif;
+  font-family: "Afacad", sans-serif;
   font-size: 1.4rem;
 
 }
@@ -420,74 +420,10 @@ h3 {
   color: #b3ac60;
 }
 
-.cat-container {
-  width: 100%;
-  margin: 30px auto;
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 
-/* Contenu sous forme de site */
-.card-contenu-site {
-  width: 350px;
-  height: fit-content;
-  border: #585223 1px solid;
-  margin: 0 auto;
-}
 
-.card-tab-site {
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.card-tab-site img {
-  height: 12px;
-}
-
-.card-image-site {
-  width: 100%;
-  height: fit-content;
-  display: block;
-  position: relative;
-}
-
-.card-image-site img {
-  width: 100%;
-  object-fit: cover;
-  border-bottom: 1px solid #585223;
-  border-top: 1px solid #585223;
-  transition: all 0.25s ease-in-out;
-}
-
-.card-infos-site {
-  padding: 20px;
-}
-
-.card-infos-site a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-family: "Afacad", sans-serif;
-  color: #585223;
-}
-
-.card-infos-site p {
-  font-size: 1rem;
-}
 /* Fin contenu sous forme de site */
 
-/* Catégorie LFP */
-.main-site {
-  width: 400px;
-  height: fit-content;
-  padding: 20px;
-}
 
 /* Bouton voir sites */
 a.voir-bouton {
@@ -507,66 +443,114 @@ a.voir-bouton {
 
 /* Fin bouton voir sites */
 
-.site-infos {
+.cat-container {
   width: 100%;
-  padding: 20px;
-  text-align: left;
+  margin: 50px auto;
+  flex-wrap: wrap;
 }
 
-#logo-LFP {
-  width: 500px;
+/* background: linear-gradient(90deg, #ffc75e00 93%, #ffc75e 93%); */
+
+
+#LFP {
+}
+
+#LFP-site {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#LFP-site-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#LFP-site-img img {
+  width: 85%;
+}
+
+#LFP-site-infos {
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  margin: -10px auto 0;
+  padding: 2% 8% 5%;
+}
+
+/* 
+#LFP-site-infos div:nth-of-type(1) {
+  width: 10%;
+  background-color: #7a7f2d;
+  height: 200px;
+} */
+
+#LFP-site-infos div:nth-of-type(1) {
+  width: 70%;
+}
+
+
+#LFP-logo {
+  width: 100%;
+  background-color: #ffffff;
   height: fit-content;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  background-color: #ffffff7a;
-  padding: 30px;
-  gap: 20px;
+  padding: 8%;
+  gap: 10%;
+  margin-top: 30px;
 }
 
-#logo-LFP img {
-  width: 150px;
+#LFP-logo-img img {
+  width: 100%;
 }
 
-#logo-LFP-infos {
-  width: 200px;
+#LFP-logo-img {
+  width: 25%;
 }
 
-#LFP-aside {
-  width: 500px;
+
+#LFP-logo-infos {
+  width: 50%;
 }
 
-#photos-LFP-infos {
-  width: 500px;
-  background-color: #ffffff7a;
-  padding: 0 30px 30px;
-}
 
-#photos-LFP {
-  margin: 20px auto 0;
+#LFP-photos {
+  width: 100%;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 5% 8%;
 }
 
-#photos-LFP-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 15px;
+#LFP-photos-infos {
   width: 100%;
-  padding: 30px 30px 0;
+}
+
+
+#LFP-photos-container {
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  width: 100%;
 }
 
 .img {
   cursor: pointer;
   transition: 0.3s;
-  width: 100px;
+  width: 22%;
 }
 
 .img:hover {
-  box-shadow: 7px 7px #f5ebab;
+  box-shadow: 14px 14px #f5ebab;
 }
 
 /* The Modal (background) */
@@ -585,16 +569,25 @@ a.voir-bouton {
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80vh;
-  max-width: 700px;
+  margin: 10vh auto;
 }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content {
   animation-name: apparition;
   animation-duration: 0.6s;
+}
+
+span#close {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 @keyframes apparition {
@@ -615,13 +608,7 @@ a.voir-bouton {
 
 /* SITE BFF */
 
-.cat-container-deux {
-  width: 100%;
-  margin: 0 auto;
-}
-
 #BFF-site {
-  margin-top: 50px;
   width: 100%;
   height: 450px;
   display: flex;

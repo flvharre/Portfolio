@@ -48,7 +48,13 @@ images.forEach(img => {
   });
 });
 
+let closeButton = document.getElementById('close');
 // When the user clicks on <span> (x), close the modal
-myModal.onclick = function() {
-  modal.style.display = "none";
-}
+
+modal.onclick = function() {
+    modal.style.display = "none";
+  }
+
+closeButton.onclick = function() {
+    modal.style.display = "none";
+  }

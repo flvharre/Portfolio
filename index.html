@@ -34,12 +34,12 @@
             <hr />
             <p>About</p>
           </a>
-          <a class="summary-line" href="">
+          <a class="summary-line" href="#travaux">
             <p>02.</p>
             <hr />
             <p>Travaux</p>
           </a>
-          <a class="summary-line" href="">
+          <a class="summary-line" href="#contact-accueil">
             <p>03.</p>
             <hr />
             <p>Contact</p>
@@ -84,7 +84,7 @@
         </div>
       </section>
 
-      <section class="body">
+      <section id="travaux" class="body">
         <!-- Nom catégorie générale -->
         <div class="cat-accueil">
           <h2>Travaux personnels</h2>
@@ -99,39 +99,13 @@
               <!-- Contenu de la catégorie, toutes les cartes -->
               <div id="LFP" class="cat-container">
                 <!-- Contenaire d'une carte -->
-                <div id="LFP-site" class="main-site">
+                <div id="LFP-site">
                   <!-- Conteneur de la mise en forme site LFP -->
-                  <div class="card-contenu-site">
-                    <div class="card-tab-site">
-                      <img src="img/onglets.png" alt="" /><img
-                        src="img/croix.svg"
-                        alt=""
-                      />
-                    </div>
-                    <a
-                      target="_blank"
-                      class="card-image-site"
-                      href="LFP/index.html"
-                    >
-                      <img src="img/LFP/LFP.jpg" alt="Site de La Fée Perle" />
-                    </a>
-                    <div class="card-infos-site">
-                      <a target="_blank" href="LFP/index.html"
-                        >Maquette de page d'accueil pour La Fée Perle</a
-                      >
-                      <p>
-                        html, css, javascript (projet d'ajout de php pour les
-                        pages catalogues)
-                      </p>
-                      <a
-                        class="bouton voir-bouton"
-                        target="_blank"
-                        href="LFP/index.html"
-                        >Voir</a
-                      >
-                    </div>
+                  <div id="LFP-site-img">
+                    <img src="img/LFP/LFP-mockup.png" alt="">
                   </div>
-                  <div class="site-infos" id="site-LFP-infos">
+                  <div id="LFP-site-infos">
+                    
                     <div>
                       <h4>Maquette page d'accueil pour La Fée Perle</h4>
                       <p class="outils">
@@ -145,12 +119,18 @@
                         distinctio optio vitae enim eos quia accusamus.
                       </p>
                     </div>
+                    <div>
+                      <a
+                      class="bouton voir-bouton"
+                      target="_blank"
+                      href="LFP/index.html"
+                      >Voir</a>
+                    </div>
                   </div>
                 </div>
 
-                <div id="LFP-aside">
-                  <div id="logo-LFP" class="card-container">
-                    <div id="logo-LFP-infos">
+                  <div id="LFP-logo" class="card-container">
+                    <div id="LFP-logo-infos">
                       <h4>Logo La Fée Perle</h4>
                       <p class="outils">Illustrator</p>
                       <hr />
@@ -162,7 +142,7 @@
                         temporibus!
                       </p>
                     </div>
-                    <div>
+                    <div id="LFP-logo-img">
                       <img
                         src="img/LFP/logo-rouille&prune.svg"
                         alt="Logo de La Fée Perle"
@@ -170,8 +150,8 @@
                     </div>
                   </div>
 
-                  <div id="photos-LFP" class="card-container">
-                    <div id="photos-LFP-container">
+                  <div id="LFP-photos" class="card-container">
+                    <div id="LFP-photos-container">
                       <img
                         class="img"
                         src="img/LFP/LFP-photo-prod_01-min.jpg"
@@ -197,13 +177,13 @@
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                       <!-- The Close Button -->
-                      <span class="close">&times;</span>
+                      <span id="close">&times;</span>
 
                       <!-- Modal Content (The Image) -->
                       <img class="modal-content" id="img01" />
                     </div>
 
-                    <div id="photos-LFP-infos">
+                    <div id="LFP-photos-infos">
                       <h4>Photos produits</h4>
                       <p class="outils">Lightroom</p>
                       <hr />
@@ -215,7 +195,10 @@
                       </p>
                     </div>
                   </div>
-                </div>
+
+
+
+
               </div>
             </div>
           </div>
@@ -227,7 +210,7 @@
 
             <div class="collapse-container">
               <!-- Contenu de la catégorie, toutes les cartes -->
-              <div id="BFF" class="cat-container-deux">
+              <div id="BFF" class="cat-container">
                 <!-- Contenaire d'une carte -->
                 <div id="BFF-site">
                   <div id="BFF-site-img">
