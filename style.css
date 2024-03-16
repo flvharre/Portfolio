@@ -23,17 +23,6 @@ Saturée :
 
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Imbue:opsz,wght@10..100,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 700
-
-.lora-<uniquifier> {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-}
-*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,6 +49,7 @@ p:not(#summary p, #droite p, #mail p) {
 h4 {
   font-family: "Afacad", sans-serif;
   font-size: 1.4rem;
+  color: #585223;
 
 }
 
@@ -300,14 +290,22 @@ nav ul li a:hover {
   justify-content: space-evenly;
 }
 
-#img_un {
+/* #img_un {
   background-color: rgb(48, 215, 215);
   width: 35%;
   height: 400px;
-}
+} */
+
+/* #presentation_texte {
+  width: 45%;
+  min-width: 400px;
+  background-color: #f9f9f9;
+  padding: 60px;
+  font-size: 1.3rem;
+} */
 
 #presentation_texte {
-  width: 45%;
+  max-width: 80%;
   min-width: 400px;
   background-color: #f9f9f9;
   padding: 60px;
@@ -429,13 +427,15 @@ h3 {
 a.voir-bouton {
   margin-top: 20px;
   padding: 4px 25px;
-  border: 2px solid #7a7f2d;
+  border: 2px solid #585223;
+  color: #585223;
   font-size: 1.2rem;
 }
 
 .voir-bouton:after {
-  background: #7a7f2d;
+  background: #585223;
 }
+
 
 .voir-bouton:hover {
   color: rgb(255, 253, 253);
@@ -449,11 +449,7 @@ a.voir-bouton {
   flex-wrap: wrap;
 }
 
-/* background: linear-gradient(90deg, #ffc75e00 93%, #ffc75e 93%); */
 
-
-#LFP {
-}
 
 #LFP-site {
   width: 100%;
@@ -551,6 +547,8 @@ a.voir-bouton {
 
 .img:hover {
   box-shadow: 14px 14px #f5ebab;
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
 }
 
 /* The Modal (background) */
@@ -645,7 +643,7 @@ span#close {
 
 #BFF-aside hr {
   border: none;
-  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  border-left: 2px solid #ffc75e82;
   height: 200px;
   width: 1px;
 }
@@ -697,6 +695,53 @@ span#close {
   height: 25px;
   margin: 0 0 0 auto;
 }
+
+
+
+
+/* SUPERNATURAL SECTION */
+#SPN {
+  background: linear-gradient(90deg, #ffc75e00 96%, #7a7f2d 96%);
+  width: 100%;
+
+}
+
+
+#SPN-site {
+  width: 80%;
+  margin-right: 7%;
+}
+
+#SPN-site-img {
+  width: 100%;
+}
+
+#SPN-site-img img {
+  width: 100%;
+}
+
+#SPN-site-infos {
+  width: 100%;
+}
+
+#SPN-pages {
+  width: 80%;
+  margin-right: 7%;
+  margin-top: 30px;
+}
+
+#SPN-pages-img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4%;
+  align-items: center;
+}
+
+#SPN-pages-img img {
+  width: 45%;
+}
+
 
 /* Apparition contenu card au click */
 
@@ -793,16 +838,4 @@ footer {
   width: 90%;
   margin: 50px auto 0;
   text-align: center;
-}
-
-/* MOBILE */
-@media screen and (max-width: 576px) {
-}
-
-/* TABLETTE */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-}
-
-/* ORDI */
-@media screen and (min-width: 769px) {
 }
