@@ -12,19 +12,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo_3.svg" type="image/x-icon">
   </head>
   <body>
     <header>
       <nav>
-        <a id="logo" href="">flavie harre</a>
-        <!-- <ul>
-          <li><a class="nav" href="index.html">accueil</a></li>
-          <li><a class="nav" href="contact.html">contact</a></li>
-        </ul> -->
+        <a id="logo" href=""><img src="img/logo_3.svg" alt=""><p>flavie harre</p></a>
       </nav>
     </header>
     <hr class="under-nav" />
-    <section class="body" id="header_accueil">
+    <section id="header_accueil">
       <div id="gauche">
         <p>Bienvenue.</p>
         <div id="summary">
@@ -46,21 +43,17 @@
           </a>
         </div>
       </div>
-
-      <div id="droite">
-        <div id="box_pantone"><span></span></div>
-
-        <p id="ligne_un">Je suis</p>
-        <p id="ligne_deux">Flavie</p>
-        <p id="hexa">#junior front-end developper</p>
-      </div>
     </section>
     <main>
       <section id="about">
         <div id="presentation">
-          <!-- <div id="img_un">
-            <p></p>
-          </div> -->
+          <div id="droite">
+            <div id="box_pantone"><span></span></div>
+
+            <p id="ligne_un">Je suis</p>
+            <p id="ligne_deux">Flavie</p>
+            <p id="hexa">#junior front-end developper</p>
+          </div>
 
           <div id="presentation_texte">
             <p>
@@ -68,8 +61,9 @@
               Métiers du Multimédia et de l'Internet à Troyes. Je suis
               passionnée par le développement web, et plus particulièrement le
               front-end qui permet la création d'expériences utilisateurs
-              uniques.
-              J'aime découvrir les dernières trends en terme de webdesign afin de pouvoir concevoir des sites adaptés aux courants actuels et aux utilisateurs d'aujourd'hui !
+              uniques. J'aime découvrir les dernières trends en terme de
+              webdesign afin de pouvoir concevoir des sites adaptés aux courants
+              actuels et aux utilisateurs d'aujourd'hui !
               <br />
               <br />
               Découvrez ici mes travaux.
@@ -100,106 +94,127 @@
               <!-- Contenu de la catégorie, toutes les cartes -->
               <div id="LFP" class="cat-container">
                 <!-- Contenaire d'une carte -->
-                <div id="LFP-site">
+                <div id="LFP-site" class="all-site">
                   <!-- Conteneur de la mise en forme site LFP -->
-                  <div id="LFP-site-img">
-                    <img src="img/LFP/LFP-mockup.png" alt="">
+                  <div id="LFP-site-img" class="all-site-img">
+                    <img src="img/LFP/LFP-mockup.png" alt="" />
                   </div>
-                  <div id="LFP-site-infos">
-                    
+                  <div id="LFP-site-infos" class="all-site-infos">
                     <div>
                       <h4>Maquette page d'accueil pour La Fée Perle</h4>
                       <p class="outils">
-                        html, css, javascript (projet d'ajout de php pour les
-                        pages catalogues)
+                        html, css, javascript (projet d'ajout de php pour la
+                        page catalogue)
                       </p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus nihil accusantium id voluptatum sunt, debitis
-                        distinctio optio vitae enim eos quia accusamus.
+                      <hr class="all-site-hr" />
+                      <p class="all-site-p">
+                        Je me suis lancée dans ce projet fictif pour le site
+                        e-commerce de La Fée Perle, dont je venais de refaire le
+                        logo ainsi que la palette de couleurs. J'ai pris plaisir
+                        à imaginer et développer une page d'accueil responsive,
+                        ce qui m'a permis de consolider mes compétences en HTML,
+                        CSS et Javascript !
+                        <br />Mon prochain défi est d'incorporer du PHP ainsi
+                        qu'une base de données pour la création de la page du
+                        catalogue de produits afin d'en automatiser l'affichage.
                       </p>
                     </div>
                     <div>
                       <a
-                      class="bouton voir-bouton"
-                      target="_blank"
-                      href="LFP/index.html"
-                      >Voir</a>
+                        class="bouton voir-bouton"
+                        target="_blank"
+                        href="LFP/index.html"
+                        >Voir</a
+                      >
                     </div>
                   </div>
                 </div>
 
-                  <div id="LFP-logo" class="card-container">
-                    <div id="LFP-logo-infos">
-                      <h4>Logo La Fée Perle</h4>
-                      <p class="outils">Illustrator</p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Magni voluptas quod hic porro, animi earum totam
-                        eius neque dicta pariatur at quia accusantium rerum odio
-                        suscipit. Consequuntur praesentium repudiandae
-                        temporibus!
-                      </p>
-                    </div>
-                    <div id="LFP-logo-img">
-                      <img
-                        src="img/LFP/logo-rouille&prune.svg"
-                        alt="Logo de La Fée Perle"
-                      />
-                    </div>
+                <div id="LFP-logo" class="card-container">
+                  <div id="LFP-logo-infos">
+                    <h4>Logo La Fée Perle</h4>
+                    <p class="outils">Illustrator</p>
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      La Fée Perle ainsi que son image a évolué au fil des ans,
+                      et la marque souhaitait un nouveau logo correspondant à
+                      cette nouvelle identité !
+                      <br />
+                      <br />
+                      Créatrice de bijoux en ivoire végétal et autres matériaux
+                      naturels et colorés, j'ai donc conçu un logo plus élégant
+                      grâce au style "one-line" de la fée, associé à une palette
+                      de couleur chaude et naturelle. La fantaisie de la
+                      créatrice n'est pas oubliée : elle se reflète dans la
+                      touche de couleur violette de la boucle d'oreille et les
+                      teintes légèrement rosées de la palette globale, plutôt
+                      que de faire le choix de couleurs uniquement végétales.
+                      <!-- <br />Le tout,
+                      fait sur Illustrator, m'a permis d'explorer et de mieux
+                      m'approprier le logiciel. -->
+                    </p>
+                  </div>
+                  <div id="LFP-logo-img">
+                    <img
+                      src="img/LFP/logo-rouille&prune.svg"
+                      alt="Logo de La Fée Perle"
+                    />
+                  </div>
+                </div>
+
+                <div id="LFP-photos" class="card-container">
+                  <div id="LFP-photos-container">
+                    <img
+                      class="img"
+                      src="img/LFP/LFP-photo-prod_01-min.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img"
+                      src="img/LFP/LFP-photo-prod_02-min.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img"
+                      src="img/LFP/LFP-photo-prod_03-min.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img"
+                      src="img/LFP/LFP-photo-prod_04-min.jpg"
+                      alt=""
+                    />
                   </div>
 
-                  <div id="LFP-photos" class="card-container">
-                    <div id="LFP-photos-container">
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_01-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_02-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_03-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_04-min.jpg"
-                        alt=""
-                      />
-                    </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span id="close">&times;</span>
 
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                      <!-- The Close Button -->
-                      <span id="close">&times;</span>
-
-                      <!-- Modal Content (The Image) -->
-                      <img class="modal-content" id="img01" />
-                    </div>
-
-                    <div id="LFP-photos-infos">
-                      <h4>Photos produits</h4>
-                      <p class="outils">Lightroom</p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Laboriosam corporis in, ea natus, blanditiis dignissimos
-                        dolor autem sed iste tempore qui nulla deleniti laborum
-                        praesentium ipsa iusto cum accusantium fugiat.
-                      </p>
-                    </div>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01" />
                   </div>
 
-
-
-
+                  <div id="LFP-photos-infos">
+                    <h4>Photos produits</h4>
+                    <p class="outils">Lightroom</p>
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Ce sont mes propres photographies de bijoux qui ont permis de donner
+                      vie à la vision de la page d'accueil de La Fée Perle.
+                      Passionnée par tous les aspects de la création, j'ai
+                      entrepris, depuis juin 2023, de faire des photos produits
+                      pour la marque. De la prise de vue à la retouche grâce à
+                      Lightroom, ces photos sont intégrées au site Prestashop de
+                      <a target="_blank" class="link" href="https://lafeeperle.fr/"
+                        >La Fée Perle</a
+                      >
+                      dont j'ai en partie la charge. <br />Un univers élégant,
+                      naturel, sur un fond souvent uni mettant en valeur la
+                      couleur des créations.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -223,11 +238,19 @@
                   <div id="BFF-site-infos">
                     <h4>Site vitrine pour la team BFF</h4>
                     <p class="outils">html, css</p>
-                    <hr />
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Delectus nihil accusantium id voluptatum sunt, debitis
-                      distinctio optio vitae enim eos quia accusamus.
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Ce site vitrine centré sur la page d'accueil a été réalisé
+                      pour une équipe fictive appelée la "Team BFF".
+                      <!-- L'objectif
+                      était de créer un site web librement inspiré d'un thème passion, sans se limiter à une fonction de portfolio. -->
+                      Pour ce projet, j'ai puisé mon inspiration dans un mélange
+                      d'univers matchant avec l'esprit autour du nom de la team
+                      : le roller dancing et le style hippie rétro, tous les
+                      deux choisis pour leurs ambiances "good vibes" et
+                      colorées. En utilisant du HTML et du CSS, j'ai traduit
+                      cette inspiration en un site véhiculant cette atmosphère
+                      positive et vivante.
                     </p>
                     <a
                       class="bouton voir-bouton"
@@ -242,27 +265,28 @@
                   <div id="BFF-crea-infos">
                     <h4>Logo et avatars</h4>
                     <p class="outils">Illustrator</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Magni voluptas quod hic porro, animi earum totam eius
-                      neque dicta pariatur at quia accusantium rerum odio
-                      suscipit. Consequuntur praesentium repudiandae temporibus!
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Pour rendre le site plus authentique, j'ai créé un logo à
+                      l'image de la team. [[En combinant .... un style
+                      autocollant]] De la même manière, j'ai préféré créer des
+                      avatars personnalisés, chacun représenté par un signe
+                      distinctif, plutôt que d'utiliser des images trouvées sur
+                      Internet pour représenter les membres de l'équipe.
                     </p>
                   </div>
-                  <hr>
                   <div id="BFF-crea">
                     <img src="img/BFF/logo-BFF.svg" alt="" />
                     <img src="img/BFF/avatar-01.svg" alt="" />
                     <img src="img/BFF/avatar-02.svg" alt="" />
                     <img src="img/BFF/avatar-03.svg" alt="" />
-                  </div>                  
+                  </div>
                 </div>
-                <div id="color-separator"> </div>
+                <div id="color-separator"></div>
               </div>
             </div>
           </div>
         </div>
-
 
         <div class="cat-accueil">
           <h2>Travaux universitaires</h2>
@@ -278,55 +302,176 @@
               <div id="SPN" class="cat-container">
                 <!-- Contenaire d'une carte -->
                 <div id="SPN-site">
-                  <!-- Conteneur de la mise en forme site LFP -->
+                  <!-- Conteneur de la mise en forme site SPN -->
                   <div id="SPN-site-img">
-                    <img src="img/SPN-mockup_02.png" alt="">
+                    <img src="img/SPN-mockup_02.png" alt="" />
                   </div>
                   <div id="SPN-site-infos">
-                    
                     <div>
                       <h4>Site Supernatural</h4>
-                      <p class="outils">
-                        html, css, javascript, php
-                      </p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus nihil accusantium id voluptatum sunt, debitis
-                        distinctio optio vitae enim eos quia accusamus.
+                      <p class="outils">html, css, javascript, php</p>
+                      <hr class="all-site-hr" />
+                      <p class="all-site-p">
+                        Je me suis plongée dans l'aventure Supernatural lors de
+                        la création de ce site entièrement fonctionnel, réalisé
+                        lors d'un projet de travail en autonomie individuel. Le
+                        thème et le visuel du site étant libres, le design a
+                        donc été conçu pour rester fidèle à l'univers et
+                        apporter cette immersion dans la série à l'utilisateur.
+                        Respectant le cahier des charges, le site exploite une
+                        gestion de données json, stylisé avec Datacreationles,
+                        mais aussi du php afin de garantir un formulaire d'envoi
+                        de mail sécurisé ainsi qu'une fonctionnalité d'upload
+                        fonctionnelle protégée par des codes d'accès.
                       </p>
                     </div>
                     <div>
                       <a
-                      class="bouton voir-bouton"
-                      target="_blank"
-                      href="http://mmi23c10.sae105.ovh/"
-                      >Voir</a>
+                        class="bouton voir-bouton"
+                        target="_blank"
+                        href="http://mmi23c10.sae105.ovh/"
+                        >Voir</a
+                      >
                     </div>
                   </div>
                 </div>
 
-
-
-                
-                  <div id="SPN-pages" class="card-container">
-                    <div id="SPN-pages-img">
-                      <img src="img/SPN-donnees.jpg" alt="">
-                      <img src="img/SPN-contact.jpg" alt="">
-                    </div>
-
+                <div id="SPN-pages" class="card-container">
+                  <div id="SPN-pages-img">
+                    <img src="img/SPN-donnees.jpg" alt="" />
+                    <img src="img/SPN-contact.jpg" alt="" />
                   </div>
-
-
+                </div>
               </div>
             </div>
           </div>
 
+          <div class="cat">
+            <div class="cat-name">
+              <h3>Monster High</h3>
+            </div>
 
+            <div class="collapse-container">
+              <!-- Contenu de la catégorie, toutes les cartes -->
+              <div id="MH" class="cat-container">
+                <!-- Contenaire d'une carte -->
+                <div id="MH-site" class="all-site">
+                  <!-- Conteneur de la mise en forme site MH -->
+                  <div id="MH-site-img" class="all-site-img">
+                    <img src="img/MH-mockup_02.png" alt="" />
+                  </div>
+                  <div id="MH-site-infos" class="all-site-infos">
+                    <div>
+                      <h4>Site Monster High</h4>
+                      <p class="outils">html, css, javascript, php</p>
+                      <hr class="all-site-hr" />
+                      <p class="all-site-p">
+                        Dans le cadre d'un projet universitaire en autonomie,
+                        j'ai conçu un site-catalogue dédié aux différents
+                        personnages et films de Monster High.
+                        <br />Le design du site propose une vision moderne de
+                        l'esthétique Monster High tout en conservant une palette
+                        de couleurs inspirées de la franchise afin d'en
+                        préserver l'identité. Une expérience optimale est
+                        offerte à tous les utilisateurs par son côté responsive.
+                        Une base de données, des requêtes SQL ainsi que du php
+                        permettent l'affichage des personnages dans le catalogue
+                        automatiquement et donnent accès à une fonction de
+                        recherche parmi les monstres. Le point clé : un
+                        back-office pensé pour le client, lui permettant la
+                        gestion des différents personnages et films dans sa base
+                        de données (CRUD) protégés par des codes d'accès.
+                      </p>
+                    </div>
+                    <div>
+                      <a
+                        class="bouton voir-bouton"
+                        target="_blank"
+                        href="https://mmi23c10.sae203.ovh/"
+                        >Voir</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div id="creations">
+          <h2>Galerie de créations</h2>
+          <div id="quincaillerie-container">
+            <h3>Migration : quincaillerie raffinée, portuaire et hétéroclite</h3>
+            <p>En quête d'une nouvelle charte graphique</p>
+            <div id="quincaillerie" class="accordion">
+              <div class="quincaillerie-creation creation">
+                <img src="img/quincaillerie_moodboard.jpg" alt="" />
+                <div class="caption">
+                  <h4>Moodboard</h4>
+                  <button></button>
+                </div>
+              </div>
+              <div class="quincaillerie-creation creation">
+                <img src="img/quincaillerie_mindmap.jpg" alt="" />
+                <div class="caption">
+                  <h4>Mindmap</h4>
+                  <button></button>
+                </div>
+              </div>
 
+              <div class="quincaillerie-creation creation">
+                <img src="img/quincaillerie_manifeste.jpg" alt="" />
+                <div class="caption">
+                  <h4>Manifeste</h4>
+                  <button></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="recette-container">
+            <h3>Tartelettes au citron : une recette illustrée</h3>
+          <div id="recette" class="accordion">
+            <div class="recette-creation creation">
+              <img src="img/recette_esquisses.jpg" alt="">
+              <div class="caption">
+                <h4>Esquisses</h4>
+                <button></button>
+              </div>
+            </div>
+            <div class="recette-creation creation">
+              <img src="img/recette_mockup_02.png" alt="">
+               <div class="caption">
+                <h4>Recette finale</h4>
+                <button></button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- <div id="creations">
+          <h2>Galerie de créations</h2>
+          <div id="quincaillerie-container">
+          <h3>Migration : quincaillerie portuaire et hétéroclite</h3>
+          <div id="quincaillerie" class="creations">
+            <div><img src="img/quincaillerie_moodboard.jpg" alt="" /></div>
+            <div><img src="img/quincaillerie_mindmap.jpg" alt="" /></div>
+            <div><img src="img/quincaillerie_manifeste.jpg" alt="" /></div>
+          </div>
+        </div>
+        <div id="recette-container">
+          <h3>Tartelettes au citron : une recette illustrée</h3>
+          <div id="recette" class="creations">
+            <div>
+              <img src="img/recette_esquisses.jpg" alt="" />
+            </div>
+            <div>
+            <img src="img/recette_mockup_02.png" alt="" />
+            </div>
+          </div>
+        </div>
+        </div> -->
 
         <div id="contact-accueil">
           <h2>Me contacter</h2>
