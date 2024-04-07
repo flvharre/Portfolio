@@ -3,24 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HARRE Flavie</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <meta name="description" content="Creative junior front-end developer, bienvenue sur le portfolio de Flavie Harre">
+    <title>Flavie Harre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo_3.svg" type="image/x-icon">
   </head>
   <body>
     <header>
       <nav>
-        <a id="logo" href="">flavie harre</a>
-        <!-- <ul>
-          <li><a class="nav" href="index.html">accueil</a></li>
-          <li><a class="nav" href="contact.html">contact</a></li>
-        </ul> -->
+        <a id="logo" href="index.php"><img src="img/logo_3.svg" alt="Logo combinant un croissant de lune et un f accompagné d'une étoile">
+          <p>flavie harre</p>
+        </a>
       </nav>
     </header>
     <hr class="under-nav" />
@@ -84,272 +80,379 @@
           </div>
         </div>
       </section>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <img class="modal-img zoomable" id="img01" src=" "/>
+      </div>
 
-      <section id="travaux" class="body">
-        <!-- Nom catégorie générale -->
-        <div class="cat-accueil">
-          <h2>Travaux personnels</h2>
+    </div>
 
-          <!-- Nom projet à dérouler-->
-          <div class="cat">
-            <div class="cat-name">
-              <h3>La Fée Perle</h3>
-            </div>
+    <section id="travaux" class="body">
+      <!-- Nom catégorie générale -->
+      <div class="cat-accueil to-animate">
+        <h2>Travaux personnels</h2>
 
-            <div class="collapse-container">
-              <!-- Contenu de la catégorie, toutes les cartes -->
-              <div id="LFP" class="cat-container">
-                <!-- Contenaire d'une carte -->
-                <div id="LFP-site">
-                  <!-- Conteneur de la mise en forme site LFP -->
-                  <div id="LFP-site-img">
-                    <img src="img/LFP/LFP-mockup.png" alt="">
-                  </div>
-                  <div id="LFP-site-infos">
-                    
-                    <div>
-                      <h4>Maquette page d'accueil pour La Fée Perle</h4>
-                      <p class="outils">
-                        html, css, javascript (projet d'ajout de php pour les
-                        pages catalogues)
-                      </p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus nihil accusantium id voluptatum sunt, debitis
-                        distinctio optio vitae enim eos quia accusamus.
-                      </p>
-                    </div>
-                    <div>
-                      <a
-                      class="bouton voir-bouton"
-                      target="_blank"
-                      href="LFP/index.html"
-                      >Voir</a>
-                    </div>
-                  </div>
-                </div>
-
-                  <div id="LFP-logo" class="card-container">
-                    <div id="LFP-logo-infos">
-                      <h4>Logo La Fée Perle</h4>
-                      <p class="outils">Illustrator</p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Magni voluptas quod hic porro, animi earum totam
-                        eius neque dicta pariatur at quia accusantium rerum odio
-                        suscipit. Consequuntur praesentium repudiandae
-                        temporibus!
-                      </p>
-                    </div>
-                    <div id="LFP-logo-img">
-                      <img
-                        src="img/LFP/logo-rouille&prune.svg"
-                        alt="Logo de La Fée Perle"
-                      />
-                    </div>
-                  </div>
-
-                  <div id="LFP-photos" class="card-container">
-                    <div id="LFP-photos-container">
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_01-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_02-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_03-min.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="img"
-                        src="img/LFP/LFP-photo-prod_04-min.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                      <!-- The Close Button -->
-                      <span id="close">&times;</span>
-
-                      <!-- Modal Content (The Image) -->
-                      <img class="modal-content" id="img01" />
-                    </div>
-
-                    <div id="LFP-photos-infos">
-                      <h4>Photos produits</h4>
-                      <p class="outils">Lightroom</p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Laboriosam corporis in, ea natus, blanditiis dignissimos
-                        dolor autem sed iste tempore qui nulla deleniti laborum
-                        praesentium ipsa iusto cum accusantium fugiat.
-                      </p>
-                    </div>
-                  </div>
-
-
-
-
-              </div>
-            </div>
+        <!-- Nom projet à dérouler-->
+        <div class="cat">
+          <div class="cat-name">
+            <h3>La Fée Perle</h3>
           </div>
 
-          <div class="cat">
-            <div class="cat-name">
-              <h3>BFF Team</h3>
-            </div>
-
-            <div class="collapse-container">
-              <!-- Contenu de la catégorie, toutes les cartes -->
-              <div id="BFF" class="cat-container">
-                <!-- Contenaire d'une carte -->
-                <div id="BFF-site">
-                  <div id="BFF-site-img">
-                    <img
-                      src="img/BFF/mockup_BFF.png"
-                      alt="Mockup du site BFF"
-                    />
-                  </div>
-                  <div id="BFF-site-infos">
-                    <h4>Site vitrine pour la team BFF</h4>
-                    <p class="outils">html, css</p>
-                    <hr />
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Delectus nihil accusantium id voluptatum sunt, debitis
-                      distinctio optio vitae enim eos quia accusamus.
-                    </p>
-                    <a
-                      class="bouton voir-bouton"
-                      target="_blank"
-                      href="BFF/index.html"
-                      >Voir</a
-                    >
-                  </div>
+          <div class="collapse-container">
+            <!-- Contenu de la catégorie, toutes les cartes -->
+            <div id="LFP" class="cat-container">
+              <!-- Contenaire d'une carte -->
+              <div id="LFP-site" class="all-site">
+                <!-- Conteneur de la mise en forme site LFP -->
+                <div id="LFP-site-img" class="all-site-img">
+                  <img src="img/LFP/LFP-mockup.png" alt="Mockup de la page d'accueil de La Fée Perle" />
                 </div>
-
-                <div id="BFF-aside">
-                  <div id="BFF-crea-infos">
-                    <h4>Logo et avatars</h4>
-                    <p class="outils">Illustrator</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Magni voluptas quod hic porro, animi earum totam eius
-                      neque dicta pariatur at quia accusantium rerum odio
-                      suscipit. Consequuntur praesentium repudiandae temporibus!
+                <div id="LFP-site-infos" class="all-site-infos">
+                  <div>
+                    <h4>Maquette page d'accueil pour La Fée Perle</h4>
+                    <p class="outils">
+                      html, css, javascript (projet d'ajout de php pour la
+                      page catalogue)
+                    </p>
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Je me suis lancée dans ce projet fictif pour le site
+                      e-commerce de La Fée Perle, dont je venais de refaire le
+                      logo ainsi que la palette de couleurs. J'ai pris plaisir
+                      à imaginer et développer une page d'accueil responsive,
+                      ce qui m'a permis de consolider mes compétences en HTML,
+                      CSS et Javascript !
+                      <br />Mon prochain défi est d'incorporer du PHP ainsi
+                      qu'une base de données pour la création de la page du
+                      catalogue de produits afin d'en automatiser l'affichage.
                     </p>
                   </div>
-                  <hr>
-                  <div id="BFF-crea">
-                    <img src="img/BFF/logo-BFF.svg" alt="" />
-                    <img src="img/BFF/avatar-01.svg" alt="" />
-                    <img src="img/BFF/avatar-02.svg" alt="" />
-                    <img src="img/BFF/avatar-03.svg" alt="" />
-                  </div>                  
+                  <div>
+                    <a class="bouton voir-bouton" target="_blank" href="LFP/index.html">Voir</a>
+                  </div>
                 </div>
-                <div id="color-separator"> </div>
+              </div>
+
+              <div id="LFP-logo" class="card-container">
+                <div id="LFP-logo-infos">
+                  <h4>Logo La Fée Perle</h4>
+                  <p class="outils">illustrator</p>
+                  <hr class="all-site-hr" />
+                  <p class="all-site-p">
+                    La Fée Perle ainsi que son image a évolué au fil des ans,
+                    et la marque souhaitait un nouveau logo correspondant à
+                    cette nouvelle identité !
+                    <br />
+                    <br />
+                    Créatrice de bijoux en ivoire végétal et autres matériaux
+                    naturels et colorés, j'ai donc conçu un logo plus élégant
+                    grâce au style "one-line" de la fée, associé à une palette
+                    de couleur chaude et naturelle. La fantaisie de la
+                    créatrice n'est pas oubliée : elle se reflète dans la
+                    touche de couleur violette de la boucle d'oreille et les
+                    teintes légèrement rosées de la palette globale, plutôt
+                    que de faire le choix de couleurs uniquement végétales.
+                    <!-- <br />Le tout,
+                      fait sur Illustrator, m'a permis d'explorer et de mieux
+                      m'approprier le logiciel. -->
+                  </p>
+                </div>
+                <div id="LFP-logo-img">
+                  <img src="img/LFP/logo-rouille&prune.svg" alt="Logo de La Fée Perle" />
+                </div>
+              </div>
+
+              <div id="LFP-photos" class="card-container">
+                <div id="LFP-photos-container">
+                  <img class="img img-LFP" src="img/LFP/LFP-photo-prod_01-min.jpg" alt="Photo produit de boucles d'oreilles en verre bleutées" />
+                  <img class="img img-LFP" src="img/LFP/LFP-photo-prod_02-min.jpg" alt="Photo produit de créoles décorées d'ivoire végétal rouge" />
+                  <img class="img img-LFP" src="img/LFP/LFP-photo-prod_03-min.jpg" alt="Photo produit d'un bracelet décoré de perles d'eau douce" />
+                  <img class="img img-LFP" src="img/LFP/LFP-photo-prod_04-min.jpg" alt="Photo produit de boucles d'oreilles en ivoire végétal rouges" />
+                </div>
+
+
+
+                <div id="LFP-photos-infos">
+                  <h4>Photos produits</h4>
+                  <p class="outils">Lightroom</p>
+                  <hr class="all-site-hr" />
+                  <p class="all-site-p">
+                    Ce sont mes propres photographies de bijoux qui ont permis de donner
+                    vie à la vision de la page d'accueil de La Fée Perle.
+                    Passionnée par tous les aspects de la création, j'ai
+                    entrepris, depuis juin 2023, de faire des photos produits
+                    pour la marque. De la prise de vue à la retouche grâce à
+                    Lightroom, ces photos sont intégrées au site Prestashop de
+                    <a target="_blank" class="link" href="https://lafeeperle.fr/">La Fée Perle</a>
+                    dont j'ai en partie la charge. <br />Un univers élégant,
+                    naturel, sur un fond souvent uni mettant en valeur la
+                    couleur des créations.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        <div class="cat">
+          <div class="cat-name">
+            <h3>BFF Team</h3>
+          </div>
 
-        <div class="cat-accueil">
-          <h2>Travaux universitaires</h2>
+          <div class="collapse-container">
+            <!-- Contenu de la catégorie, toutes les cartes -->
+            <div id="BFF" class="cat-container">
+              <!-- Contenaire d'une carte -->
+              <div id="BFF-site">
+                <div id="BFF-site-img">
+                  <img src="img/BFF/mockup_BFF.png" alt="Mockup du site BFF" />
+                </div>
+                <div id="BFF-site-infos">
+                  <h4>Site vitrine pour la team BFF</h4>
+                  <p class="outils">html, css</p>
+                  <hr class="all-site-hr" />
+                  <p class="all-site-p">
+                    Ce site vitrine centré sur la page d'accueil a été réalisé
+                    pour une équipe fictive appelée la "Team BFF".
+                    <!-- L'objectif
+                      était de créer un site web librement inspiré d'un thème passion, sans se limiter à une fonction de portfolio. -->
+                    Pour ce projet, j'ai puisé mon inspiration dans un mélange
+                    d'univers matchant avec l'esprit autour du nom de la team
+                    : le roller dancing et le style hippie rétro, tous les
+                    deux choisis pour leurs ambiances "good vibes" et
+                    colorées. En utilisant du HTML et du CSS, j'ai traduit
+                    cette inspiration en un site véhiculant cette atmosphère
+                    positive et vivante.
+                  </p>
+                  <a class="bouton voir-bouton" target="_blank" href="BFF/index.html">Voir</a>
+                </div>
+              </div>
 
-          <!-- Nom projet à dérouler-->
-          <div class="cat">
-            <div class="cat-name">
-              <h3>Supernatural</h3>
+              <div id="BFF-aside">
+                <div id="BFF-crea-infos">
+                  <h4>Logo et avatars</h4>
+                  <p class="outils">illustrator</p>
+                  <hr class="all-site-hr" />
+                  <p class="all-site-p">
+                    Pour rendre le site plus authentique, j'ai créé un logo à
+                    l'image de la team. Combinant fleurs, police épaisse, rondeurs et contours colorés, le logo a
+                    l'allure d'un autocollant plongeant dans le thème. De la même manière, j'ai préféré créer des
+                    avatars personnalisés, chacun représenté par un signe
+                    distinctif, plutôt que d'utiliser des images trouvées sur
+                    Internet pour représenter les membres de l'équipe.
+                  </p>
+                </div>
+                <div id="BFF-crea">
+                  <img src="img/BFF/logo-BFF.svg" alt="Logo de la team BFF en forme de sticker retro" />
+                  <img src="img/BFF/avatar-01.svg" alt="Avatar du premier membre de l'équipe" />
+                  <img src="img/BFF/avatar-02.svg" alt="Avatar du deuxième membre de l'équipe" />
+                  <img src="img/BFF/avatar-03.svg" alt="Avatar du troisième membre de l'équipe" />
+                </div>
+              </div>
+              <div id="color-separator"></div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="collapse-container">
-              <!-- Contenu de la catégorie, toutes les cartes -->
-              <div id="SPN" class="cat-container">
-                <!-- Contenaire d'une carte -->
-                <div id="SPN-site">
-                  <!-- Conteneur de la mise en forme site LFP -->
-                  <div id="SPN-site-img">
-                    <img src="img/SPN-mockup_02.png" alt="">
+      <div class="cat-accueil to-animate">
+        <h2>Travaux universitaires</h2>
+
+        <!-- Nom projet à dérouler-->
+        <div class="cat">
+          <div class="cat-name">
+            <h3>Supernatural</h3>
+          </div>
+
+          <div class="collapse-container">
+            <!-- Contenu de la catégorie, toutes les cartes -->
+            <div id="SPN" class="cat-container">
+              <!-- Contenaire d'une carte -->
+              <div id="SPN-site">
+                <!-- Conteneur de la mise en forme site SPN -->
+                <div id="SPN-site-img">
+                  <img src="img/SPN-mockup_02.png" alt="Mockup du site Supernatural" />
+                </div>
+                <div id="SPN-site-infos">
+                  <div>
+                    <h4>Site Supernatural</h4>
+                    <p class="outils">html, css, javascript, php</p>
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Je me suis plongée dans l'aventure Supernatural lors de
+                      la création de ce site entièrement fonctionnel, réalisé
+                      lors d'un projet de travail en autonomie individuel. Le
+                      thème et le visuel du site étant libres, le design a
+                      donc été conçu pour rester fidèle à l'univers et
+                      apporter cette immersion dans la série à l'utilisateur.
+                      Respectant le cahier des charges, le site exploite une
+                      gestion de données json, stylisé avec DataTables,
+                      mais aussi du php afin de garantir un formulaire d'envoi
+                      de mail sécurisé ainsi qu'une fonctionnalité d'upload protégée par des codes d'accès.
+                    </p>
                   </div>
-                  <div id="SPN-site-infos">
-                    
-                    <div>
-                      <h4>Site Supernatural</h4>
-                      <p class="outils">
-                        html, css, javascript, php
-                      </p>
-                      <hr />
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus nihil accusantium id voluptatum sunt, debitis
-                        distinctio optio vitae enim eos quia accusamus.
-                      </p>
-                    </div>
-                    <div>
-                      <a
-                      class="bouton voir-bouton"
-                      target="_blank"
-                      href="http://mmi23c10.sae105.ovh/"
-                      >Voir</a>
-                    </div>
+                  <div>
+                    <a class="bouton voir-bouton" target="_blank" href="http://mmi23c10.sae105.ovh/">Voir</a>
                   </div>
                 </div>
+              </div>
 
-
-
-                
-                  <div id="SPN-pages" class="card-container">
-                    <div id="SPN-pages-img">
-                      <img src="img/SPN-donnees.jpg" alt="">
-                      <img src="img/SPN-contact.jpg" alt="">
-                    </div>
-
-                  </div>
-
-
+              <div id="SPN-pages" class="card-container">
+                <div id="SPN-pages-img">
+                  <img src="img/SPN-donnees.jpg" alt="Image de la page données du site" />
+                  <img src="img/SPN-contact.jpg" alt="Image de la page contact du site" />
+                </div>
               </div>
             </div>
           </div>
-
-
-          </div>
         </div>
 
+        <div class="cat">
+          <div class="cat-name">
+            <h3>Monster High</h3>
+          </div>
 
-
-        <div id="contact-accueil">
-          <h2>Me contacter</h2>
-          <div id="contact-accueil-contenu">
-            <a target="_blank" href="https://www.linkedin.com/in/flavie-harre/"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a class="github" target="_blank" href="https://github.com/flvharre"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <div id="mail">
-              <p class="mail">harreflavie@gmail.com</p>
-              <i class="fa-solid fa-envelope"></i>
+          <div class="collapse-container">
+            <!-- Contenu de la catégorie, toutes les cartes -->
+            <div id="MH" class="cat-container">
+              <!-- Contenaire d'une carte -->
+              <div id="MH-site" class="all-site">
+                <!-- Conteneur de la mise en forme site MH -->
+                <div id="MH-site-img" class="all-site-img">
+                  <img src="img/MH-mockup_02.png" alt="Mockup du site Monster High" />
+                </div>
+                <div id="MH-site-infos" class="all-site-infos">
+                  <div>
+                    <h4>Site Monster High</h4>
+                    <p class="outils">html, css, javascript, php</p>
+                    <hr class="all-site-hr" />
+                    <p class="all-site-p">
+                      Dans le cadre d'un projet universitaire en autonomie,
+                      j'ai conçu un site-catalogue dédié aux différents
+                      personnages et films de Monster High.
+                      <br />Le design du site propose une vision moderne de
+                      l'esthétique Monster High tout en conservant une palette
+                      de couleurs inspirées de la franchise afin d'en
+                      préserver l'identité. Une expérience optimale est
+                      offerte à tous les utilisateurs par son côté responsive.
+                      Une base de données, des requêtes SQL ainsi que du php
+                      permettent l'affichage des personnages dans le catalogue
+                      automatiquement et donnent accès à une fonction de
+                      recherche parmi les monstres. Le point clé : un
+                      back-office pensé pour le client, lui permettant la
+                      gestion des différents personnages et films dans sa base
+                      de données (CRUD) protégés par des codes d'accès.
+                    </p>
+                  </div>
+                  <div>
+                    <a class="bouton voir-bouton" target="_blank" href="https://mmi23c10.sae203.ovh/">Voir</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer>
-      <p>Flavie Harre &copy; 2024</p>
-    </footer>
+      <div id="creations" class="to-animate">
+        <h2>Galerie de créations</h2>
+        <div id="quincaillerie-container">
+          <h3>Migration : Quincaillerie raffinée, portuaire et hétéroclite</h3>
+          <p>En quête d'une nouvelle charte graphique</p>
+          <div id="quincaillerie" class="accordion">
+            <div class="quincaillerie-creation creation">
 
-    <script src="main.js"></script>
-  </body>
+              <img class="img" src="img/quincaillerie_moodboard.jpg" alt="Moodboard pour la nouvelle charte graphique de Migration" />
+              <div class="caption">
+                <h4>Moodboard</h4>
+                <button class="bouton voir-bouton">Découvrir</button>
+              </div>
+            </div>
+            <div class="quincaillerie-creation creation">
+              <img class="img" src="img/quincaillerie_mindmap.jpg" alt="Mindmap pour la nouvelle charte graphique de Migration" />
+              <div class="caption">
+                <h4>Mindmap</h4>
+                <button class="bouton voir-bouton">Découvrir</button>
+              </div>
+            </div>
+
+            <div class="quincaillerie-creation creation">
+              <img class="img" src="img/quincaillerie_manifeste.jpg" alt="Manifeste de la nouvelle charte graphique de Migration" />
+              <div class="caption">
+                <h4>Manifeste</h4>
+                <button class="bouton voir-bouton">Découvrir</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="recette-container">
+          <h3>Tartelettes au citron : Une recette illustrée</h3>
+          <div id="recette" class="accordion">
+            <div class="recette-creation creation">
+              <img class="img" src="img/recette_esquisses.jpg" alt="Esquisses réalisées pour la recette des tartelettes au citron">
+              <div class="caption">
+                <h4>Esquisses</h4>
+                <button class="bouton voir-bouton">Découvrir</button>
+              </div>
+            </div>
+            <div class="recette-creation creation">
+              <img class="img" src="img/recette_mockup.png" alt="Illustration finale de la recette des tartelettes au citron">
+              <div class="caption">
+                <h4>Recette finale</h4>
+                <button class="bouton voir-bouton">Découvrir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-accueil" class="to-animate">
+        <h2>Me contacter</h2>
+        <div id="contact-accueil-contenu">
+          <a target="_blank" href="https://www.linkedin.com/in/flavie-harre/"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a class="github" target="_blank" href="https://github.com/flvharre"><i class="fa-brands fa-github"></i></a>
+          <div id="mail">
+            <p class="mail">harreflavie@gmail.com</p>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+        <div id="form">
+          <form action="traitements/envoi_mail.php" method="post">
+            <div id="en-tete">
+              <div>
+                <label for="prenom">Prénom <span>*</span></label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+              </div>
+              <div>
+                <label for="nom">Nom <span>*</span></label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+              </div>
+            </div>
+
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z\.]{2,15}" placeholder="ex: nom@domaine.fr" required>
+
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message" placeholder="Ecrivez ici votre message" required></textarea>
+
+            <input id="submit" type="submit" value="Envoyer">
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="to-animate">
+    <p>Flavie Harre &copy; 2024</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
