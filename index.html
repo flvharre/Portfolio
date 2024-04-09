@@ -22,7 +22,7 @@
   <body>
     <header>
       <nav>
-        <div class="target-element">
+        <div id="target-element1" class="target-element">
           <a class="logo" href="index.php"
             ><img
               src="img/logo_3.svg"
@@ -40,18 +40,22 @@
             <p>flavie harre</p></a
           >
           <div id="links">
-            <a class="about-link" href="#about">01. About</a>
-            <a class="works-link" href="#travaux">02. Travaux</a>
-            <a class="contact-link" href="#contact-accueil">03. Contact</a>
+            <a class="about-link menuItem" href="#about">01. About</a>
+            <a class="works-link menuItem" href="#travaux">02. Travaux</a>
+            <a class="contact-link menuItem" href="#contact-accueil">03. Contact</a>
           </div>
+          <button class="hamburger">
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-xmark xmark"></i>
+          </button>
         </div>
       </nav>
     </header>
 
     <hr class="under-nav" />
 
-    <section class="body" id="header_accueil">
-      <div id="gauche" class="target-element">
+    <section class="body target-element" id="header_accueil">
+      <div id="gauche">
         <p>Bienvenue.</p>
         <div id="summary">
           <h1>PORTFOLIO</h1>
@@ -90,13 +94,14 @@
 
           <div id="presentation_texte" class="to-animate">
             <p>
-              Etudiante, je suis actuellement étudiante en première année de BUT
+              Etudiante, je suis actuellement en première année de BUT
               Métiers du Multimédia et de l'Internet à Troyes. Je suis
               passionnée par le développement web, et plus particulièrement le
               front-end qui permet la création d'expériences utilisateurs
               uniques. J'aime découvrir les dernières trends en terme de
               webdesign afin de pouvoir concevoir des sites adaptés aux courants
               actuels et aux utilisateurs d'aujourd'hui !
+              Ma formation actuelle me permet d'être polyvalente,
               <br />
               <br />
               Découvrez ici mes travaux.

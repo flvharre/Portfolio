@@ -130,6 +130,126 @@ document.addEventListener('DOMContentLoaded', () => {
         e.target.style.setProperty('--x',(100*e.offsetX/e.target.offsetWidth)+'%');
         e.target.style.setProperty('--y',(100*e.offsetY/e.target.offsetHeight)+'%'); 
       }
+
+
+
+
+
+      // FIXED NAV
+      const navFixed = document.querySelector('#nav-fixed');
+const targetElement1 = document.querySelector('#target-element1');
+const targetElement2 = document.querySelector('#header_accueil');
+
+// Function to check if both target elements are out of the viewport
+const areBothTargetsOutOfViewport = () => {
+    const target1Rect = targetElement1.getBoundingClientRect();
+    const target2Rect = targetElement2.getBoundingClientRect();
+
+    return target1Rect.bottom <= 0 && target2Rect.bottom <= 0;
+};
+
+// Callback function to be executed when the target intersects with the viewport
+const handleIntersection = () => {
+    if (areBothTargetsOutOfViewport()) {
+        navFixed.classList.add('nav-fixed-on');
+        console.log('OUT, ok');
+    } else {
+        navFixed.classList.remove('nav-fixed-on');
+        console.log('IN');
+    }
+};
+
+// Create an intersection observer instance with the callback function
+const observer = new IntersectionObserver(handleIntersection);
+
+console.log(targetElement1);
+console.log(targetElement2);
+
+
+// Start observing each target element
+observer.observe(targetElement1);
+observer.observe(targetElement2);
+
+
+const aboutLink = document.querySelector('.about-link');
+const worksLink = document.querySelector('.works-link');
+const contactLink = document.querySelector('.contact-link');
+
+const setActiveClass = (entry, linkElement) => {
+if (entry.isIntersecting) {
+    linkElement.classList.add('active');
+    console.log('active class ok', linkElement.textContent);
+} else {
+    linkElement.classList.remove('active');
+}
+};
+
+// Callback functions
+const handleAboutIntersection = (entries) => {
+setActiveClass(entries[0], aboutLink);
+};
+
+const handleWorksIntersection = (entries) => {
+setActiveClass(entries[0], worksLink);
+};
+
+const handleContactIntersection = (entries) => {
+setActiveClass(entries[0], contactLink);
+};
+
+const options = {
+root: null, // Use the viewport as the root
+threshold: 0.2
+};
+
+// Create Intersection Observer instances for each target element
+const aboutObserver = new IntersectionObserver(handleAboutIntersection, options);
+const worksObserver = new IntersectionObserver(handleWorksIntersection, options);
+const contactObserver = new IntersectionObserver(handleContactIntersection, options);
+
+// Start observing each target element
+const aboutSection = document.getElementById('about');
+const worksSection = document.getElementById('travaux');
+const contactSection = document.getElementById('contact-accueil');
+
+aboutObserver.observe(aboutSection);
+worksObserver.observe(worksSection);
+contactObserver.observe(contactSection);
+
+
+// Menu hamburger
+const menu = document.querySelector("#links");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".xmark");
+const menuIcon = document.querySelector(".fa-bars");
+
+function toggleMenu() {
+
+if (menu.classList.contains("showMenu")) {
+menu.classList.remove("showMenu");
+closeIcon.style.display = "none";
+menuIcon.style.display = "block";
+hamburger.classList.remove("inMenu");
+closeIcon.classList.remove("show-before");
+
+} else {
+menu.classList.add("showMenu");
+closeIcon.style.display = "block";
+menuIcon.style.display = "none";
+hamburger.classList.add("inMenu");
+closeIcon.classList.add("show-before");
+}
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+function(menuItem) { 
+menuItem.addEventListener("click", toggleMenu);
+}
+)
+
   
   
   });
@@ -162,76 +282,4 @@ document.addEventListener('DOMContentLoaded', () => {
           });
           
           
-          const navFixed = document.querySelector('#nav-fixed');
-          const targets = document.querySelectorAll('.target-element');
-          
-          // Function to check if all target elements are out of the viewport
-          const allTargetsOutOfViewport = (entries) => {
-              return entries.every(entry => !entry.isIntersecting);
-          };
-          
-          // Callback function to be executed when the target intersects with the viewport
-          const handleIntersection = (entries, observer) => {
-              if (allTargetsOutOfViewport(entries)) {
-                  navFixed.classList.add('nav-fixed-on');
-              } else {
-                  navFixed.classList.remove('nav-fixed-on');
-              }
-          };
-          
-          // Options for the intersection observer
-          const options = {
-              root: null, // Use the viewport as the root
-              threshold: 0.2 // Trigger the callback when at least 50% of the target element is visible
-          };
-          
-          // Create an intersection observer instance with the callback function and options
-          const observer = new IntersectionObserver(handleIntersection, options);
-          
-          // Start observing each target element
-          targets.forEach(target => {
-              observer.observe(target);
-          });
-
-
-          const aboutLink = document.querySelector('.about-link');
-const worksLink = document.querySelector('.works-link');
-const contactLink = document.querySelector('.contact-link');
-
-const setActiveClass = (entry, linkElement) => {
-    if (entry.isIntersecting) {
-        linkElement.classList.add('active');
-        console.log('active class ok', linkElement.textContent);
-    } else {
-        linkElement.classList.remove('active');
-    }
-};
-
-// Callback function for the Intersection Observer for the 'about' section
-const handleAboutIntersection = (entries) => {
-    setActiveClass(entries[0], aboutLink);
-};
-
-// Callback function for the Intersection Observer for the 'works' section
-const handleWorksIntersection = (entries) => {
-    setActiveClass(entries[0], worksLink);
-};
-
-// Callback function for the Intersection Observer for the 'contact' section
-const handleContactIntersection = (entries) => {
-    setActiveClass(entries[0], contactLink);
-};
-
-// Create Intersection Observer instances for each target element
-const aboutObserver = new IntersectionObserver(handleAboutIntersection, options);
-const worksObserver = new IntersectionObserver(handleWorksIntersection, options);
-const contactObserver = new IntersectionObserver(handleContactIntersection, options);
-
-// Start observing each target element
-const aboutSection = document.getElementById('about');
-const worksSection = document.getElementById('travaux');
-const contactSection = document.getElementById('contact-accueil');
-
-aboutObserver.observe(aboutSection);
-worksObserver.observe(worksSection);
-contactObserver.observe(contactSection);
+ 
