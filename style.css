@@ -111,39 +111,24 @@ body {
 
 .logo {
   display: flex;
-  font-variant: small-caps;
   text-decoration: none;
-  font-family: "Imbue", serif;
-  font-size: 2.3rem;
-  letter-spacing: 5px;
   text-align: center;
   color: #585223;
-  animation-name: appear;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-.logo p {
-  display: none;
-  animation-name: appear;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
 }
 
 .logo img {
   height: 2.3rem;
 }
 
-/* header */
+.logo p {
+  display: none;
+  font-variant: small-caps;
+  font-family: "Imbue", serif;
+  font-size: 2.3rem;
+  letter-spacing: 5px;
+}
 
-/* header {
-  position: sticky;
-  z-index: 16;
-  top: 0;
-  background-color: #f9f9f9;
-} */
-
-header nav div {
+header nav div:not(#links, #nav-fixed) {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -151,35 +136,56 @@ header nav div {
   padding: 20px 0;
 }
 
-header nav div ul {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 40px;
-}
-
-header nav div ul li {
-  list-style: none;
-}
-
 nav a,
 nav p {
   opacity: 0%;
-  animation-name: enter;
+  animation-name: appear;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
-#links {
-  width: 40%;
+#nav-fixed {
+  position: fixed;
   display: flex;
-  justify-content: flex-end;
-  gap: 15%;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 50px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  z-index: -500;
+  opacity: 0;
+  padding: 20px 5%;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-fixed.nav-fixed-on {
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 550;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#links {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 4rem;
+  z-index: 600;
 }
 
 #links a {
   font-family: "Afacad", sans-serif;
-  font-size: 1.1rem;
   text-decoration: none;
+  text-wrap: nowrap;
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.5rem;
 }
 
 #links a:nth-of-type(1) {
@@ -203,30 +209,53 @@ nav p {
   transition: all 0.3s ease;
   bottom: 0;
 }
+
 #links a.active:after {
   width: 100%;
   height: 2px;
   background-color: #cdc475;
 }
 
-#nav-fixed {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  padding: 20px 5%;
-  z-index: -500;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+#links.showMenu {
+  transform: translateY(0);
+  background: white;
 }
 
-#nav-fixed.nav-fixed-on {
-  top: 0;
-  background-color: #f9f9f9;
-  z-index: 800;
-  opacity: 1;
-  transition: opacity 0.4s ease-in-out;
+.hamburger {
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: #585223;
 }
+
+.hamburger.inMenu {
+  position: fixed;
+  z-index: 601;
+  top: 2rem;
+  right: 2rem;
+}
+
+.xmark:before {
+  display: none;
+}
+
+i.fa-solid.fa-xmark.xmark {
+  display: none;
+}
+
+.show-before:before {
+  display: inherit;
+  color: #2d2d2d;
+  font-size: 1.6rem;
+  content: '\f00d'; /* font awesome close icon */
+}
+
+
+
+
 
 .under-nav {
   opacity: 0%;
@@ -364,6 +393,11 @@ nav p {
   height: 463px;
   width: 260px;
   position: relative;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
 }
 
 #ligne_un {
@@ -376,6 +410,11 @@ nav p {
   font-size: 3.4rem;
   top: 0;
   left: 0;
+  opacity: 0;
+  animation-name: enter;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
 }
 
 #ligne_deux {
@@ -387,6 +426,11 @@ nav p {
   font-family: "Imbue", serif;
   font-size: 3.4rem;
   left: 167px;
+  opacity: 0;
+  animation-name: enter;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.10s;
 }
 
 #hexa {
@@ -397,6 +441,11 @@ nav p {
   font-size: 0.8rem;
   color: #7a7f2d;
   text-wrap: nowrap;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.12s;
 }
 
 #box_pantone {
@@ -724,7 +773,7 @@ button.voir-bouton {
 .modal {
   display: none;
   position: fixed;
-  z-index: 500;
+  z-index: 750;
   left: 0;
   top: 0;
   width: 100%;
@@ -782,7 +831,7 @@ span#close {
   width: fit-content;
   font-size: 1.9rem;
   cursor: pointer;
-  z-index: 300;
+  z-index: 755;
 }
 
 @keyframes apparition {
@@ -1163,10 +1212,6 @@ form span {
 
   .logo p {
     display: block;
-    font-variant: small-caps;
-    font-family: "Imbue", serif;
-    font-size: 2.3rem;
-    letter-spacing: 5px;
   }
 
   .logo img {
@@ -1339,9 +1384,33 @@ form span {
   #BFF-site {
     background: linear-gradient(180deg, #ffc75e 30%, #d6c2a60d 30%);
   }
+
+  #links {
+    position: initial;
+    display: flex;
+    align-items: baseline;
+    width: 40%;
+    justify-content: flex-end;
+    gap: 15%;
+    transform: translateY(0);
+    padding: 0;
+    background-color: #2d2d2d00;
+  }
+  
+  #links a {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
+  /* NAV */
+
   /* HEADER */
   #header_accueil {
     flex-direction: row;
