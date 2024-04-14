@@ -131,7 +131,7 @@ body {
 header nav div:not(#links, #nav-fixed) {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 50px;
   padding: 20px 0;
 }
@@ -148,7 +148,7 @@ nav p {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 50px;
   top: -100%;
   left: 0;
@@ -156,7 +156,7 @@ nav p {
   z-index: -500;
   opacity: 0;
   padding: 20px 5%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #nav-fixed.nav-fixed-on {
@@ -170,7 +170,7 @@ nav p {
 #links {
   position: fixed;
   transform: translateY(-100%);
-  transition: transform 0.2s;
+  transition: all 0.2s ease-in-out;
   top: 0;
   left: 0;
   right: 0;
@@ -229,6 +229,10 @@ nav p {
   border-radius: 5px;
   font-size: 1.3rem;
   color: #585223;
+  opacity: 0%;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .hamburger.inMenu {
@@ -248,7 +252,7 @@ i.fa-solid.fa-xmark.xmark {
 
 .show-before:before {
   display: inherit;
-  color: #2d2d2d;
+  color: #585223;
   font-size: 1.6rem;
   content: '\f00d'; /* font awesome close icon */
 }
@@ -494,6 +498,11 @@ i.fa-solid.fa-xmark.xmark {
   padding: 60px;
   font-size: 1.1rem;
   margin: 0 auto;
+}
+
+.span-presentation {
+  font-family: "Fraunces", serif;
+  color: #7a7f2d;
 }
 
 /* #img_un {
@@ -1193,7 +1202,8 @@ form span {
 
 #submit:hover {
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #ffc75e;
+  border: 2px solid #585223;
+  box-shadow: #ffc75e 4px 4px;
   color: #585223;
   cursor: pointer;
   font-weight: bold;
@@ -1216,6 +1226,14 @@ form span {
 
   .logo img {
     display: none;
+  }
+
+  header nav div:not(#links, #nav-fixed) {
+    align-items: baseline;
+  }
+
+  #nav-fixed {
+    align-items: baseline;
   }
 
   /* HEADER */
@@ -1385,6 +1403,10 @@ form span {
     background: linear-gradient(180deg, #ffc75e 30%, #d6c2a60d 30%);
   }
 
+  #links.showMenu {
+    background: rgba(255, 255, 255, 0);
+  }
+
   #links {
     position: initial;
     display: flex;
@@ -1481,6 +1503,7 @@ form span {
     max-width: 80%;
     min-width: 360px;
     font-size: 1.3rem;
+    padding: 80px;
   }
 
   /* FORM CONTACT */
@@ -1827,6 +1850,7 @@ form span {
 
   #presentation_texte {
     min-width: 400px;
+    padding: 100px;
   }
 
   /*
