@@ -17,10 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // Ajouter un gestionnaire de scroll
   window.addEventListener('scroll', handleScroll);
   
-  // Gérer les animations au chargement initial de la page
+  // Trigger animations at page loading
   handleScroll();
   
   
@@ -135,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-      // FIXED NAV
+      // Fixed nav
       const navFixed = document.querySelector('#nav-fixed');
 const targetElement1 = document.querySelector('#target-element1');
 const targetElement2 = document.querySelector('#header_accueil');
@@ -152,18 +151,13 @@ const areBothTargetsOutOfViewport = () => {
 const handleIntersection = () => {
     if (areBothTargetsOutOfViewport()) {
         navFixed.classList.add('nav-fixed-on');
-        console.log('OUT, ok');
     } else {
         navFixed.classList.remove('nav-fixed-on');
-        console.log('IN');
     }
 };
 
 // Create an intersection observer instance with the callback function
 const observer = new IntersectionObserver(handleIntersection);
-
-console.log(targetElement1);
-console.log(targetElement2);
 
 
 // Start observing each target element
@@ -178,7 +172,6 @@ const contactLink = document.querySelector('.contact-link');
 const setActiveClass = (entry, linkElement) => {
 if (entry.isIntersecting) {
     linkElement.classList.add('active');
-    console.log('active class ok', linkElement.textContent);
 } else {
     linkElement.classList.remove('active');
 }
@@ -217,7 +210,7 @@ worksObserver.observe(worksSection);
 contactObserver.observe(contactSection);
 
 
-// Menu hamburger
+// Hamburger menu
 const menu = document.querySelector("#links");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -264,7 +257,7 @@ menuItem.addEventListener("click", toggleMenu);
   
   
           CAT_NAME.addEventListener('click', event => {
-              event.stopPropagation(); // Preventing the event from bubbling up to the document
+              event.stopPropagation();
               CAT_NAME.classList.toggle('active');
   
               

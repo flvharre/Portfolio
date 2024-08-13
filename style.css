@@ -1210,6 +1210,10 @@ form span {
   transition: all 0.25s ease-in-out;
 }
 
+.to-animate {
+  opacity: 0;
+}
+
 @media screen and (min-width: 480px) {
   /* INTRO */
 
