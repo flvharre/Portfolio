@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     function isInViewport(element) {
-      var rect = element.getBoundingClientRect();
+      let rect = element.getBoundingClientRect();
       return (
           rect.top <= (window.innerHeight)
       );
@@ -19,18 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   window.addEventListener('scroll', handleScroll);
   
-  // Trigger animations at page loading
   handleScroll();
   
   
-      // Get the modal
       let modal = document.getElementById("myModal");
   
-      // Get the image and insert it inside the modal
       let images = document.querySelectorAll("#LFP .img");
       let modalImg = document.getElementById("img01");
       
-      // Loop through each image and add a click event listener
       images.forEach(img => {
         img.addEventListener("click", function() {
           openModal(this.src);
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let imgButtons = document.querySelectorAll('#creations button');
       let imagesCreation = document.querySelectorAll("#creations .img");
       
-      // Loop through each button and add a click event listener
       imgButtons.forEach(button => {
         button.addEventListener("click", function() {
           let imgIndex = Array.from(imgButtons).indexOf(this);
@@ -53,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
       
-      // Function to open the modal and set the modal image source
+      // Function to open the modal + set the modal image source
       function openModal(src) {
         modal.style.display = "flex";
         let srcWithoutMin = src.replace("-min", "");
@@ -131,39 +126,30 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
 
-
-
-
       // Fixed nav
       const navFixed = document.querySelector('#nav-fixed');
 const targetElement1 = document.querySelector('#target-element1');
 const targetElement2 = document.querySelector('#header_accueil');
 
-// Function to check if both target elements are out of the viewport
-const areBothTargetsOutOfViewport = () => {
+const outOfViewport = () => {
     const target1Rect = targetElement1.getBoundingClientRect();
     const target2Rect = targetElement2.getBoundingClientRect();
 
     return target1Rect.bottom <= 0 && target2Rect.bottom <= 0;
 };
 
-// Callback function to be executed when the target intersects with the viewport
 const handleIntersection = () => {
-    if (areBothTargetsOutOfViewport()) {
+    if (outOfViewport()) {
         navFixed.classList.add('nav-fixed-on');
     } else {
         navFixed.classList.remove('nav-fixed-on');
     }
 };
 
-// Create an intersection observer instance with the callback function
 const observer = new IntersectionObserver(handleIntersection);
 
-
-// Start observing each target element
 observer.observe(targetElement1);
 observer.observe(targetElement2);
-
 
 const aboutLink = document.querySelector('.about-link');
 const worksLink = document.querySelector('.works-link');
@@ -195,12 +181,10 @@ root: null, // Use the viewport as the root
 threshold: 0.2
 };
 
-// Create Intersection Observer instances for each target element
 const aboutObserver = new IntersectionObserver(handleAboutIntersection, options);
 const worksObserver = new IntersectionObserver(handleWorksIntersection, options);
 const contactObserver = new IntersectionObserver(handleContactIntersection, options);
 
-// Start observing each target element
 const aboutSection = document.getElementById('about');
 const worksSection = document.getElementById('travaux');
 const contactSection = document.getElementById('contact-accueil');
@@ -243,8 +227,6 @@ menuItem.addEventListener("click", toggleMenu);
 }
 )
 
-  
-  
   });
   
   
